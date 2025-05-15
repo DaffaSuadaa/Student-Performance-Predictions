@@ -25,15 +25,20 @@ Sumber data: [Dataset Jaya Jaya Institut](https://github.com/dicodingacademy/dic
 Ekstrak file student-performance-analysis.zip, berikut tampilan struktur folder setelah di ekstrack:
 
 ```
-student-performance-analysis/
+student_performance_predictions/
+│
+├── dashboard/
+│   ├── prediction.py
+│   ├── random_forest_model.joblib
+│   └── requirements.txt
+│
+├── README.md
 ├── Student_Performance_Predictions.ipynb
 ├── clean_student_df.csv
+├── daffa_suada_i9ug-dashboard.png
 ├── data.csv
-├── random_forest_model.joblib
-├── daffa_suada_i9ug-dashboard.png       
-├── link-dashboard.txt                     
-├── requirements.txt                      
-├── README.md                             
+├── link-dashboard.txt
+└── requirements.txt                      
 ```
 2. Buat setup environtment dan aktifkan dengan kode berikut :
 ```
@@ -61,10 +66,19 @@ Link : https://lookerstudio.google.com/reporting/7136b014-1612-47cd-b26d-3a2b1db
 
 ## Menjalankan Sistem Machine Learning
 Jalankan prediction di terminal dengan kode berikut:
+1. Setelah berada di `student_performance_predictions`, maka harus berpindah ke `dashboard` maka :
+```
+cd dashboard
+```
+2. Jalankan dashboard prediction
 ```
 streamlit run prediction.py
 ```
-Note : Setelah menjalankan kode diatas, anda akan diarahkan ke dalam browser yang berjudul `Student Performance Prediction`. Broswer tersebut berisi
+Note : Setelah menjalankan kode diatas, anda akan diarahkan ke dalam browser yang berjudul `Student Performance Prediction`. Broswer tersebut berisi cara penggunaannya.
+
+Atau anda dapat mengakses langsung dashboard dengan tautan di bawah ini:
+
+[StreamlitApp](https://student-performance-predictions-2apjx3i2qzd6vthpfsz4wb.streamlit.app)
 
 ## Conclusion
 
