@@ -1,0 +1,10 @@
+wheel
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+sqlalchemy
+scikit-learn
+xgboost
+joblib
