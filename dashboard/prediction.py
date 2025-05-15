@@ -1,9 +1,11 @@
 import streamlit as st
 import joblib
 import numpy as np
+import os
 
 # Load model
-model = joblib.load("random_forest_model.joblib")
+model_path = os.path.join(os.path.dirname(__file__), "random_forest_model.joblib")
+model = joblib.load(model_path)
 
 # Judul
 st.title("🎓 Student Performance Prediction")
